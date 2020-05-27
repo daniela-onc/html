@@ -1,4 +1,19 @@
-function singleParam(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+var num = process.argv.slice(2);
+num = Number(num);
+
+function rollingDice(num) {
+  // make the dice rolling "num" times.
+  // return the results.
+  var diceResults = "";
+  for (var i = 0; i < num; i++) {
+    var resultOfEachDice = "";
+    resultOfEachDice = Math.floor((Math.random() * 6) + 1);
+    diceResults += resultOfEachDice + ", ";
+  }
+  var lastComma = diceResults.lastIndexOf(", ");
+  diceResults = diceResults.slice(0, lastComma);
+
+  return diceResults;
 }
-console.log(singleParam(6));
+
+console.log("Rolled " + num + " dice: " + rollingDice(num));
