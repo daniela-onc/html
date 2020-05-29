@@ -6,6 +6,6 @@ const grades = [73, 69, 3, 100, 50, 70, 69, 88, 95, 77, 35];
 //Convert the anonymous function into an arrow function in order to get some practice with them.
 
 const passingGradesOnly = grades.filter(function(num) {
-  return (num % 2 == 0);
+  return (num >= 70);
 });
 console.log('List of passing Grades:', passingGradesOnly);
