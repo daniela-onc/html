@@ -3,7 +3,7 @@ const lighthouses = ["Gibraltar Point", "Peggy's Point", "Cove Island", "Discove
 //Use the map method on lighthouses so that we instead see an array of numbers.
 
 
-const map = lighthouses.map(string => string.length) 
+const map = lighthouses.map(string => string.length);
 console.log(map);
 
 

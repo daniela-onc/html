@@ -1,3 +1,10 @@
+
+//function will swap values between two objects. Function will receive four parameters: key1 & Key2 - a string; object1 & object2 - an object
+
+//function should:
+//   fetch the value stored in key1 in object1, and then store that value in key2 of object2.
+//   take the original value stored in key2 of object2, and store that in key1 of object1.
+//   not need to return anything.
 const swapper = function(key1, object1, key2, object2) {
   console.log('Swap!');
 
@@ -5,7 +12,8 @@ const swapper = function(key1, object1, key2, object2) {
   let value1 = object1[key1];
   let value2 = object2[key2];
 
-  object1[key1] = value2
+  object1[key1] = value2;
+  object2[key2] = value1;
 
 
 
