@@ -8,4 +8,4 @@ function sumToOne(n) {
   return sum;
 }
 
-console.log(sumToOne(4));
+console.log(sumToOne(4)); //return 10
